@@ -1,0 +1,1170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Lobster&family=Montserrat&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --black-color: #fff;
+    --bg-color: #000;
+    --main-color: #d1ff06;
+    --second-color: #fff;
+    --black-color: #000;
+    --low-color: #000;
+    --blue-color: #7b1ee5;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--blue-color);
+    background: var(--second-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 33px;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.logo-about {
+    font-size: 33px;
+    color: var(--black-color);
+    font-weight: 800;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--black-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--blue-color)
+}
+
+.row h3:hover {
+    color: var(--main-color);
+}
+
+.list {
+    color: #fff;
+}
+
+.list h3 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.list h3:hover {
+    transform: translateY(5px);
+}
+
+.h-right {
+    display: flex;
+    align-items: center;
+}
+
+.h-right a:first-child {
+    color: var(--black-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+
+.h-right a {
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--black-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+
+.h-right a:hover {
+    color: var(--main-color);
+    transform: transLateY(-3px);
+}
+
+#menu-icon {
+    color: var(--black-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+section {
+    padding: 70px 17% 60px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-sunda.png);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-dayak {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-dayak.png);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-minang {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-minang.png);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-bugis {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-bugis.png);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-bali {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-bali.png);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-batak {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner-batak.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--second-color);
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--second-color);
+    align-items: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.435);
+    /* Sesuaikan nilai bayangan sesuai preferensi Anda */
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.653);
+    /* Sesuaikan nilai bayangan sesuai preferensi Anda */
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 40px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    transform: translateX(5px);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--second-color);
+    background: rgb(22, 240, 22);
+    color: var(--second-color);
+}
+
+
+header.sticky {
+    padding: 8px 17%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px #0000001a;
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.feature-content h3 {
+    color: #000;
+}
+
+.row-img {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.row-img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s;
+}
+
+.row-img img:hover {
+    transform: scale(1.2);
+}
+
+.feature-content h4 {
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointerl transition: all. 50s ease;
+}
+
+.feature-content h4:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.holiday {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+    position: relative;
+    background-image: url('/img/Group 31.png');
+    background-repeat: no-repeat;
+    /* Untuk menghindari pengulangan gambar */
+}
+
+.holiday-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.holiday-text h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.holiday-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: 10px;
+}
+
+.holiday-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        /* Posisi awal di luar layar kiri */
+    }
+
+    100% {
+        transform: translateX(0%);
+        /* Posisi akhir, masuk ke dalam layar */
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+}
+
+.tour {
+    background-image: url(/img/bg-content-4.png);
+    background-repeat: no-repeat;
+}
+
+.tour-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.tour-content .box h6,
+.tour-content .box h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.212);
+    /* Tambahkan bayangan dengan offset X 2px, offset Y 2px, blur radius 4px, dan warna bayangan RGBA hitam dengan tingkat transparansi 0.5 */
+    color: var(--second-color);
+}
+
+.box {
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(100%);
+    transition: all .3s cubic-bezier(.499, .05, .55, .95);
+    will-change: filter;
+    display: block;
+    outline: 1px solid #fff;
+}
+
+.box h6 {
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 18px;
+    font-weight;
+    500;
+}
+
+.box h4 {
+    position: absolute;
+    left: 25px;
+    bottom: 65px;
+    font-size: 20px;
+    font-weight;
+    700;
+}
+
+.box img:hover {
+    filter: brightness(90%) hue-rorate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.center-btn {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Culture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+    position: relative;
+    background-image: url('/img/Group 31-r.png');
+    background-repeat: no-repeat;
+    /* Untuk menghindari pengulangan gambar */
+    background-position: center right;
+    /* Menempatkan gambar di tengah sebelah kanan */
+}
+
+.Culture-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Culture-text h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.Culture-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: 10px;
+}
+
+.Culture-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px
+}
+
+.newsletter-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.newsletter-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.newsletter-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: #000;
+}
+
+.newsletter-content form {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 1rem;
+}
+
+.newsletter-content form input:first-child {
+    padding: 15px;
+    background: #202020;
+    font-size: var(--p-font);
+    color: var(--black-color);
+    border-radius: 5px;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .newsletter-content {
+        grid-template-columns: 1fr;
+        /* Semua elemen dalam satu kolom */
+    }
+
+    .newsletter-content form {
+        grid-template-columns: 1fr;
+        /* Form mengambil seluruh lebar */
+    }
+
+    .newsletter-text h2 {
+        font-size: smaller;
+        /* Ukuran font lebih kecil */
+    }
+
+    .newsletter-text p {
+        font-size: smaller;
+        /* Ukuran font lebih kecil */
+    }
+
+    .newsletter-content form input:first-child {
+        padding: 10px;
+        /* Padding lebih kecil */
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+    background-image: url(/img/Group\ 34.png);
+    background-repeat: no-repeat;
+    /* Untuk menghindari pengulangan gambar */
+    background-position: center bottom;
+    /* Atur posisi latar belakang ke tengah vertikal dan bawah */
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-box a {
+    color: #000;
+    margin-bottom: 0.8rem;
+    transition: all .50s ease;
+}
+
+.footer-box a:hover {
+    transform: translateX(-5px);
+    color: var(--black-color);
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: #202020;
+    color: var(--second-color);
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform 0.6s;
+}
+
+.social a:hover {
+    background: var(--main-color);
+    color: var(--second-color);
+    transform: translateX(-4px);
+}
+
+.copyright p {
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    font-size: 15px;
+}
+
+.bold {
+    font-family: 'Poppins Black Bold', sans-serif;
+    text-transform: uppercase;
+    gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.gallery-image img {
+    height: 350px;
+    width: 450px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 350px;
+    width: 450px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 350px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.length {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.text-center h1 {
+    font-family: 'Poppins';
+    font-size: 4rem;
+}
+
+.text-center p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px;
+    padding-top: 10px;
+}
+
+/* CSS untuk grid card responsif */
+/* Tradisi Suku Sunda */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Menambahkan jarak antar kartu */
+    padding: 20px; /* Memberi ruang di sekeliling kartu */
+}
+
+.grid-card {
+    background: rgb(59, 33, 80);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.098);
+    /* ... aturan lain yang mungkin ada ... */
+}
+
+.grid-card hr {
+    margin: 10px 0;
+    /* Jarak vertikal sekitar garis horizontal */
+    border: 0;
+    border-top: 3px solid var(--blue-color)
+}
+
+.grid-card h2 {
+    color: #ffff00;
+}
+
+.grid-card p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #00000054;
+}
+
+/* Media Queries untuk layar tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Dua kartu per baris */
+    }
+}
+
+/* Media Queries untuk layar yang lebih besar */
+@media screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* Empat kartu per baris */
+    }
+}
+
+
+/* baju adat */
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+
+.slider-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Menambahkan gap */
+    justify-content: center; /* Membuat kartu menjadi di tengah */
+}
+
+.card {
+    flex: none;
+    width: calc(50% - 16px); /* Menyesuaikan lebar untuk dua kartu per baris */
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #0000002b;
+    background: rgb(59, 33, 80);
+    margin: 0 auto; /* Menengahkan kartu */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px;
+    color: #d1ff06;
+}
+
+.card p {
+    margin: 10px;
+    color: #fff;
+}
+
+/* Media Queries untuk layar kecil, misalnya smartphone */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%; /* Lebar penuh untuk layar kecil */
+    }
+}
+
+/* Media Queries untuk layar medium (tablet) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        width: calc(50% - 16px); /* Menyesuaikan untuk 2 kartu per baris */
+    }
+}
+
+/* Media Queries untuk layar besar */
+@media screen and (min-width: 1025px) {
+    .card {
+        width: calc(33% - 16px); /* Menyesuaikan untuk 3 kartu per baris */
+    }
+}
+
+/* Media Queries untuk layar sangat besar */
+@media screen and (min-width: 1441px) {
+    .card {
+        width: calc(25% - 16px); /* Menyesuaikan untuk 4 kartu per baris */
+    }
+}
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+    height: 50vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144),
+            rgba(255, 255, 255, 0.336)),
+        url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+
+/* Makananan Khas */
+
+#about {
+    background: #f5f5f7;
+
+}#about-adat {
+    background: #faf8ea
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 20px;
+}
+
+.about-text h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: 10px;
+}
+
+.about-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 35px
+}
+
+/* Menu List */
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+    text-align: center;
+    font-size: 3.4rem; /* Ukuran font untuk layar besar */
+    font-weight: 400;
+    color: #ffff00;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 1px 1px 3px #00000062;
+}
+
+.food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+.food-menu-item {
+    display: flex;
+    flex: 1 1 600px; /* Fleksibel, tetapi dengan basis minimum 600px */
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.food-menu-container img {
+    display: block;
+    width: 250px; /* Ukuran awal */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-description {
+    margin: auto 1.5rem;
+}
+
+.food-description h2 {
+    font-size: 1.8rem; /* Ukuran font untuk judul */
+    font-weight: 800;
+    color: #444;
+}
+
+.food-description p {
+    font-size: 1.4rem; /* Ukuran font untuk deskripsi */
+    color: #555;
+    font-weight: 500;
+}
+
+/* Media Queries untuk layar tablet */
+@media screen and (max-width: 1024px) {
+    .food-menu-heading {
+        font-size: 2.8rem; /* Ukuran font lebih kecil */
+    }
+    .food-menu-container img {
+        width: 200px; /* Ukuran gambar lebih kecil */
+        height: 200px;
+    }
+    .food-description h2 {
+        font-size: 1.6rem;
+    }
+    .food-description p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Queries untuk layar smartphone */
+@media screen and (max-width: 600px) {
+    .food-menu-item {
+        flex-direction: column; /* Tumpuk vertikal */
+        align-items: center; /* Pusatkan item */
+        text-align: center; /* Teks terpusat */
+    }
+    .food-menu-container img {
+        width: 150px; /* Ukuran gambar lebih kecil lagi */
+        height: 150px;
+    }
+    .food-description {
+        margin: 1rem 0; /* Margin lebih kecil */
+    }
+    .food-description h2, .food-description p {
+        font-size: 1.4rem; /* Ukuran font lebih kecil */
+    }
+}
+
+@media (max-width: 1700px) {
+    header {
+        padding: 18px 8%
+    }
+
+    header.sticky {
+        padding: 7px 8%;
+    }
+
+    section {
+        padding: 50px 8% 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 14px 5%
+    }
+
+    header.sticky {
+        padding: 7px 5%;
+    }
+
+    section {
+        padding: 45px 5% 35px;
+    }
+
+    :root {
+        --h1-font: 4.6rem;
+        --h2-font: 2.8rem;
+        --p-font: 15px;
+    }
+
+    .home {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1050px) {
+    .feature-content {
+        gap: 1.5rem;
+    }
+
+    .holiday {
+        gap: 3rem;
+    }
+
+    .Culture {
+        gap: 3rem;
+    }
+
+    #menu-icon {
+        displa: block;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        color: #000;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar.open {
+        left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .holiday {
+        grid-template-columns: 1fr;
+    }
+
+    .Culture {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --h1-font: 3.5rem;
+        --h2-font: 2.1rem;
+    }
+
+    .home {
+        height: 85vh;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        padding: 12px 3%
+    }
+
+    header.sticky {
+        padding: 7px 3%;
+    }
+
+    section {
+        padding: 60px 3% 50px;
+    }
+}
